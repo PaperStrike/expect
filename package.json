@@ -1,6 +1,6 @@
 {
   "name": "@sliphua/expect",
-  "version": "27.1.0",
+  "version": "27.1.1",
   "description": "Browser-compatible version of Jest's `expect`",
   "repository": {
     "type": "git",
