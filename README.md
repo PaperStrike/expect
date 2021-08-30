@@ -1,25 +1,25 @@
-# @storybook/expect
+# @sliphua/expect
 
-[![npm version](https://img.shields.io/npm/v/@storybook/expect?label=%40storybook%2Fexpect)](https://npmjs.com/package/@storybook/expect)
+[![npm version](https://img.shields.io/npm/v/@sliphua/expect?label=%40sliphua%2Fexpect "@sliphua/expect")](https://npmjs.com/package/@sliphua/expect)
 
 Browser-compatible version of Jest's [`expect`](https://jestjs.io/docs/expect).
 
 ## Installation
 
 ```sh
-yarn add @storybook/expect
+yarn add @sliphua/expect
 ```
 
 or
 
 ```sh
-npm install @storybook/expect
+npm install @sliphua/expect
 ```
 
 ## Usage
 
 ```js
-import { expect } from "@storybook/expect"
+import { expect } from "@sliphua/expect"
 
 expect(true).toBe(true)
 ```
