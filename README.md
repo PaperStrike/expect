@@ -19,12 +19,10 @@ npm install @sliphua/expect
 ## Usage
 
 ```js
-import { expect } from "@sliphua/expect"
+import expect from "@sliphua/expect"
 
 expect(true).toBe(true)
 ```
-
-> Note the named import.
 
 ## Documentation
 
