@@ -1,1 +1,1 @@
-export { default as expect } from 'expect'
+export { default as default } from 'expect'

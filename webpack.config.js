@@ -6,7 +6,9 @@ module.exports = {
   output: {
     path: __dirname,
     filename: "bundle.js",
-    libraryTarget: "module",
+    library: {
+      type: 'module'
+    },
   },
   experiments: {
     outputModule: true,
