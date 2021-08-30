@@ -10,6 +10,7 @@
   "types": "types/index.d.ts",
   "license": "MIT",
   "files": [
+    "types",
     "./bundle.js"
   ],
   "publishConfig": {
