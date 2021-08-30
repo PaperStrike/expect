@@ -13,7 +13,12 @@ async function main() {
   }
 
   console.log(`Found newer version of 'expect' (${expectVersion}). Publishing update...`)
-  const { name, version } = await release({ increment: expectVersion })
+  const { name, version } = await release({
+    git: {
+      requireCleanWorkingDir: false
+    },
+    increment: expectVersion
+  })
   console.log(`Released ${name}@${version}`)
 }
 
