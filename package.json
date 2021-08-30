@@ -1,12 +1,13 @@
 {
-  "name": "@storybook/expect",
+  "name": "@sliphua/expect",
   "version": "27.0.6",
   "description": "Browser-compatible version of Jest's `expect`",
   "repository": {
     "type": "git",
-    "url": "https://github.com/storybookjs/expect.git"
+    "url": "https://github.com/PaperStrike/expect.git"
   },
   "browser": "bundle.js",
+  "types": "types/index.d.ts",
   "license": "MIT",
   "files": [
     "./bundle.js"
@@ -17,9 +18,14 @@
   "scripts": {
     "dev": "webpack --watch --mode development",
     "build": "webpack --mode production",
-    "prepublish": "npm run build"
+    "copy-types": "copyfiles \"node_modules/expect/build/*.d.ts\" types --flat",
+    "prepublish": "npm run build && npm run copy-types"
+  },
+  "dependencies": {
+    "@jest/types": "^27.0.6"
   },
   "devDependencies": {
+    "copyfiles": "^2.4.1",
     "expect": "^27.0.6",
     "node-polyfill-webpack-plugin": "^1.1.4",
     "release-it": "^14.11.5",
