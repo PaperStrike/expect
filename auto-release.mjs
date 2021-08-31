@@ -9,7 +9,7 @@ const expectVersion = process.argv[2]
 async function main() {
   if (!semver.gt(expectVersion, currentVersion)) {
     console.log(`Already up-to-date with latest version of 'expect' (${expectVersion}).`)
-    process.exit()
+    process.exit(0)
   }
 
   console.log(`Found newer version of 'expect' (${expectVersion}). Publishing update...`)
