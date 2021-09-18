@@ -1,10 +1,11 @@
-const NodePolyfillPlugin = require("node-polyfill-webpack-plugin")
-const TerserPlugin = require("terser-webpack-plugin")
+import NodePolyfillPlugin from  "node-polyfill-webpack-plugin"
+import TerserPlugin from "terser-webpack-plugin"
+import { resolve } from 'path';
 
-module.exports = {
+export default {
   entry: "./index.js",
   output: {
-    path: __dirname,
+    path: resolve('.'),
     filename: "bundle.js",
     library: {
       type: 'module'

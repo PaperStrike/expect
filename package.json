@@ -6,6 +6,7 @@
     "type": "git",
     "url": "https://github.com/PaperStrike/expect.git"
   },
+  "type": "module",
   "browser": "bundle.js",
   "license": "MIT",
   "files": [
