@@ -2,18 +2,18 @@
 
 [![npm version](https://img.shields.io/npm/v/@sliphua/expect?label=%40sliphua%2Fexpect "@sliphua/expect")](https://npmjs.com/package/@sliphua/expect)
 
-Browser-compatible version of Jest's [`expect`](https://jestjs.io/docs/expect).
+Browser polyfill of Jest's [`expect`](https://jestjs.io/docs/expect).
 
 ## Installation
 
 ```sh
-yarn add @sliphua/expect
+yarn add -D expect @sliphua/expect
 ```
 
 or
 
 ```sh
-npm install @sliphua/expect
+npm i --save-dev expect @sliphua/expect
 ```
 
 ## Usage
