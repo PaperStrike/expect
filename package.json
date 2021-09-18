@@ -6,12 +6,9 @@
     "type": "git",
     "url": "https://github.com/PaperStrike/expect.git"
   },
-  "main": "bundle.js",
   "browser": "bundle.js",
-  "types": "types/index.d.ts",
   "license": "MIT",
   "files": [
-    "types",
     "./bundle.js"
   ],
   "publishConfig": {
@@ -20,15 +17,12 @@
   "scripts": {
     "dev": "webpack --watch --mode development",
     "build": "webpack --mode production",
-    "copy-types": "copyfiles \"node_modules/expect/build/*.d.ts\" types --flat",
-    "prepublish": "npm run build && npm run copy-types"
+    "prepublish": "npm run build"
   },
-  "dependencies": {
-    "@jest/types": "^27.0.6"
+  "peerDependencies": {
+    "expect": "^27.2.0"
   },
   "devDependencies": {
-    "copyfiles": "^2.4.1",
-    "expect": "^27.2.0",
     "node-polyfill-webpack-plugin": "^1.1.4",
     "release-it": "^14.11.5",
     "semver": "^7.3.5",

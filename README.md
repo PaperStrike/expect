@@ -18,10 +18,14 @@ npm install @sliphua/expect
 
 ## Usage
 
-```js
-import expect from "@sliphua/expect"
+In `package.json`:
 
-expect(true).toBe(true)
+```json
+{
+  "browser": {
+    "expect": "@sliphua/expect"
+  }
+}
 ```
 
 ## Documentation
