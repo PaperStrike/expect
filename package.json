@@ -1,6 +1,6 @@
 {
   "name": "@sliphua/expect",
-  "version": "27.3.0",
+  "version": "27.3.1",
   "description": "Browser-compatible version of Jest's `expect`",
   "repository": {
     "type": "git",
@@ -24,7 +24,7 @@
     "expect": "^27.2.0"
   },
   "devDependencies": {
-    "expect": "^27.3.0",
+    "expect": "^27.3.1",
     "node-polyfill-webpack-plugin": "^1.1.4",
     "release-it": "^14.11.5",
     "semver": "^7.3.5",
